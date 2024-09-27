@@ -1,0 +1,183 @@
+@use "asset" as *;
+
+.wrap{
+    width: 100%;
+    padding: 20px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .content{
+        border-radius: 32px;
+        box-shadow: 0px 0px 15px -5px #777777;
+        width: 390px;
+        height: 750px;
+        position: relative;
+        overflow: hidden;
+        .stamp-container{
+            padding: 24px;
+            height: 100%;
+            position: relative;
+            overflow: scroll;
+            .stamp-content{
+                h1{
+                    text-align: center;
+                    font-size: 2rem;
+                }
+                .stamp-num{
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    text-align: center;
+                    border-bottom: solid 1px #ccc;
+                    padding: 4px 0px 16px;
+                }
+                .stamp-list{
+                    padding: 40px 0px 80px;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    row-gap: 48px;
+                    column-gap: 32px;
+                    .stamp-wrap{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .stamp-name{
+                            font-weight: 600;
+                            font-size: 1.4rem;
+                            color: #7f7f7f;
+                        }
+                    }
+                }
+            }
+            .backbtn-wrap{
+                display: flex;
+                justify-content: center;
+                .backBtn{
+                    width: 240px;
+                    padding: 12px;
+                    background-color: #369dd5;
+                    color: white;
+                    font-size: 1.4rem;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .stamp-exp-wrap{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.4);
+            z-index: -1;
+            opacity: 0;
+            .stamp-exp-content{
+                position: relative;
+                width: 320px;
+                height: 360px;
+                padding: 24px;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .stamp-exp-name{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    padding-top: 16px;
+                    margin-bottom: auto;
+                }
+                .getBtn{
+                    margin-top: auto;
+                    margin-bottom: 16px;
+                    padding: 16px;
+                    width: 240px;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: #369dd5;
+                    color: white;
+                    border-radius: 4px;
+                }
+                .closeBtn{
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 9999px;
+                    background-color: rgba(0,0,0,0.7);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .stamp-exp-wrap.modelUp{
+            animation-name: fadein;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+        .qr-input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            opacity: 0;
+            .qr{
+                width: 320px;
+                height: 480px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                .qr-content{
+                    border-radius: 20px 20px 0 0;
+                    width: 100%;
+                    height: 320px;
+                }
+                p{
+                    padding: 32px 0px;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                button{
+                    height: 48px;
+                    width: 240px;
+                    font-size: 1.4rem;
+                    color: #fff;
+                    background-color: #e6e6e6;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .qr-input.modelUp{
+            animation-name: fadein;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+        z-index: -1;
+    }
+    to{
+        opacity: 1;
+        z-index: 1;
+    }
+}
