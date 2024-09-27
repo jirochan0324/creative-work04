@@ -62,7 +62,7 @@ function initMap() {
     position: { lat:34.99764322932013, lng:138.93242070868897},
     map,
     title:"狩野川",
-    icon:kanogawaMarker,
+    icon:kanogawaIcon,
     animation: google.maps.Animation.DROP,
   })
   // 狩野川放水路
@@ -71,7 +71,7 @@ function initMap() {
     position: { lat:35.04846174679539, lng:138.90653467759995},
     map,
     title:"狩野川放水路",
-    icon:housuiroMarker,
+    icon:housuiroIcon,
     animation: google.maps.Animation.DROP,
   })
   // 三津浜海水浴場
