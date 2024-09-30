@@ -9,7 +9,7 @@ function initMap() {
   });
   // map カスタムアイコンとスポット追加
   // 沼津仲見世商店街
-  const nakamiseIcon = "/public/img/marker/nakamise.png";
+  const nakamiseIcon = "/img/marker/nakamise.png";
   const nakamiseMarker = new google.maps.Marker({
     position: { lat:35.10136662590643, lng:138.85833238270152},
     map,
@@ -18,7 +18,7 @@ function initMap() {
     animation: google.maps.Animation.DROP,
   })
   // びゅうお
-  const byuoIcon = "/public/img/marker/byuuo.png";
+  const byuoIcon = "/img/marker/byuuo.png";
   const byuoMarker = new google.maps.Marker({
     position: { lat:35.08134533898026, lng:138.85449548308014},
     map,
