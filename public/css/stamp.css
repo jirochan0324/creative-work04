@@ -4579,7 +4579,7 @@ readers do not read off random characters that represent icons */
   width: 240px;
   padding: 12px;
   background-color: #369dd5;
-  color: white;
+  color: #fff;
   font-size: 1.4rem;
   border-radius: 10px;
 }
@@ -4601,7 +4601,7 @@ readers do not read off random characters that represent icons */
   width: 320px;
   height: 360px;
   padding: 24px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -4622,7 +4622,7 @@ readers do not read off random characters that represent icons */
   font-weight: 600;
   text-align: center;
   background-color: #369dd5;
-  color: white;
+  color: #fff;
   border-radius: 4px;
 }
 .wrap .content .stamp-exp-wrap .stamp-exp-content .closeBtn {
