@@ -4605,17 +4605,17 @@ readers do not read off random characters that represent icons */
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .wrap .content .stamp-exp-wrap .stamp-exp-content .stamp-exp-name {
+  padding-bottom: 32px;
   font-size: 2rem;
   font-weight: 700;
-  padding-top: 16px;
-  margin-bottom: auto;
 }
 .wrap .content .stamp-exp-wrap .stamp-exp-content .getBtn {
-  margin-top: auto;
-  margin-bottom: 16px;
+  position: absolute;
+  bottom: 32px;
   padding: 16px;
   width: 240px;
   font-size: 1.6rem;
