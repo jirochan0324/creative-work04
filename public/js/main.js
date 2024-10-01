@@ -12,6 +12,10 @@ document.querySelector('.qr-btn').addEventListener('click',()=>{
     }).catch(e => {
         console.log(e)}
     );
+    setTimeout(
+        
+        ,500
+    )
 })
 
 document.getElementById('qrClose').addEventListener('click',()=>{
