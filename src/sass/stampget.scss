@@ -1,0 +1,19 @@
+@use "asset" as *;
+
+.wrap{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .content{
+        border-radius: 32px;
+        box-shadow: 0px 0px 15px -5px #777777;
+        width: 390px;
+        height: 750px;
+        position: relative;
+        overflow: hidden;
+    }
+}

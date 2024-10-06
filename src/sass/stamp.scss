@@ -168,6 +168,25 @@
             animation-fill-mode: forwards;
             animation-timing-function: ease;
         }
+        .stamp-get{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            opacity: 0;
+        }
+        .stamp-get.modelUp{
+            animation-name: fadein;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
     }
 }
 
